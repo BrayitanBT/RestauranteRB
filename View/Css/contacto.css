@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+body{
+    background-image: url(/View/Assets/img/Restaurante/negrodibujo.jpg);
+}
+/*header*/
+.barraNav{
+    background-color: #000000;
+    color: #ffff;
+    display: flex;
+    height: 100px;
+    max-width:100% ;
+    box-shadow: 0 0 15px 1px black;
+}
+.enlaces{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-left:50%;
+    margin-top: 1%;
+}
+.enlacesC{
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    border: 2px solid ;
+    border-radius: 10px;
+    font-size: 21px;
+    font-weight:500;
+    background-color: #ffde59;
+    text-decoration: none;
+}
+.imagenNav{
+    height: 120%;
+}
+
+
+/*Pié de página */
+.container__footer{
+    width: 100%;
+    max-width: 300rem;
+    margin: auto;
+}
+.footer{
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    text-align: center;
+    font-size: 20px;
+    border-top:2px solid black ;
+    color:#ffde59 ;
+}
+.contacto{
+margin: 20px;
+}
+.siguenos{
+margin-bottom: 10px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size: 30px;
+color:#ffde59 ;
+}
+.logos{
+margin: 20px;
+font-size: 45px;
+
+}
+.logosImg{
+margin: 15px;
+
+}
+.otros{
+margin: 20px;
+
+}
+.derechos{
+margin-top: 0;
+font-size: 25px;
+text-align: center;
+background-color: #ffde59;
+color: #000000;
+padding: 10px;
+width: 100%;
+font-weight: 600;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/*contacto*/
+/*formulario*/
+.formulario{
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    background: #171d1c;
+    border: 2px solid black;
+    padding: 40px;
+    width: 40vw;
+    height: 40vw;
+    margin: 10em auto;
+    min-width: 25em;
+    min-height: 40em;
+    border-radius: 15px;
+    box-shadow: 0 0 6px solid;
+    box-shadow: 0 0 10px black;
+}
+.title-formu{
+    text-align: center;
+    font-size: 49px;
+    padding: 10px;
+}
+label{
+    font-size: 18px;
+    padding: 8px;
+    font-weight: 500;
+}
+input{
+    padding: 8px;
+    border-radius: 8px;
+
+}
+.submit{
+    padding: 8px;
+    margin-top: 10px;
+    width: 80px;
+    margin-left: 90%;
+    background-color: #ffde59;
+}
+.map{
+    border-radius: 10px;
+    margin: 15px auto;
+    width: 30vw;
+    height: 20vh;
+}
+

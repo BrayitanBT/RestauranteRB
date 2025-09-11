@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./View/Css/style.css">
+    <link rel="stylesheet" href="./View/Css/bootstrap/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/c439753abb.js" crossorigin="anonymous"></script>
+</head>
+<!--Encabezado -->
+<body class="body" >
+<header >
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark"id="barranav" >
+        <div class="container-fluid">
+            <img src="/img/Logo/logo.png" alt="" style="height: 8vw;max-height: 200px; min-width: 150px; min-height:150px;">
+            <a class="navbar-brand" href="#" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  font-size: clamp(1rem, 5vw, 4rem); color: #FFD43B; ">FASTIE</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item" >
+                            <a class="nav-link" href="/index.html" style="font-size: clamp(0.8rem, 1.3vw, 3rem);">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./View/Front/html/menu.html" style="font-size: clamp(0.8rem, 1.3vw, 3rem);">MENU</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./View/Front/html/sobre.html" style="font-size: clamp(0.8rem, 1.3vw, 3rem);">SOBRE NOSOTROS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./View/Front/html/contacto.html" style="font-size: clamp(0.8rem, 1.3vw, 3rem);">CONTACTOS </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./View/Front/html/reservar.html" style="font-size: clamp(0.8rem, 1.3vw, 3rem);">RESERVAR</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./View/Front/html/domicilios.html" style="font-size: clamp(0.8rem, 1.3vw, 3rem);">DOMICILIOS </a>
+                        </li>
+                        </ul>
+                </div>
+        </div>
+    </nav>
+</header>
+
+    <main>
+        <!--titulo-->
+        <div>
+            <h2 class="tituloIndex">CONOCE NUESTRAS INSTALACIONES</h2>
+        </div>
+        <!--Carrusel -->
+            <div id="demo" class="carousel slide" data-bs-ride="carousel">
+        <!-- Indicators/dots -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                </div>
+        <!-- The slideshow/carousel -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" style="background: black;">
+                            <img src="./View/Assets/img/Restaurante/1.png" alt=""  style="width: 100vw;height: 100vh;object-fit: cover;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./View/Assets/img/Restaurante/2.png" alt="" style="width: 100vw;height: 100vh;object-fit: cover;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./View/Assets/img/Restaurante/3.png" alt="" style="width: 100vw;height: 100vh;object-fit: cover;">
+                        </div>
+                    </div>
+        <!-- Left and right controls/icons -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+            </div>
+    </main>
+
+        <!--Titulo encima de las tarjetas principales /son 3/ -->
+    <div>
+        <h2 class="tituloEmpanadasIndex">PRUEBA NUESTRAS ESPECIALIDADES</h2>
+    </div>
+        <!--Tarjeta 1 -->
+        <section class="tarjetas">
+        
+            <div class="card">
+                <div class="face front">
+                    <img class="img--card" src="./View/Assets/img/Producto/1.png" alt="">
+                    <h3>ARGENTINAS</h3>
+                </div>
+                    <div class="face back">
+                        <h3>$9000</h3>
+                        <p>
+                        La empanada argentina es un plato tradicional que destaca por su exquisita combinación de sabores y su versatilidad.
+                        </p>
+                        <div class="link">
+                            <a href="/html/reservar.html">Compra ahora</a>
+                        </div>
+                    </div>
+            </div>
+
+        <!--Tarjeta 2 -->
+        <div class="card">
+            <div class="face front">
+                <img class="img--card" src="./View/Assets/img/Producto/2.png" alt="">
+                <h3>COLOMBIANA</h3>
+            </div>
+            <div class="face back">
+                <h3>$2000</h3>
+                <p>
+                    La empanada colombiana es una deliciosa y crujiente masa frita rellena de una mezcla sabrosa y jugosa
+                </p>
+                <div class="link">
+                    <a href="/html/reservar.html">Compra ahora</a>
+                </div>
+            </div>
+        </div>
+
+        <!--Tarjeta 3 -->
+        <div class="card">
+            <div class="face front">
+                <img class="img--card" src="./View/Assets/img/Producto/3.png" alt="">
+                <h3>Mixtas</h3>
+            </div>
+            <div class="face back">
+                <h3>$6000</h3>
+                <p> 
+                    es una deliciosa combinación de sabores que mezcla dos de los rellenos más tradicionales de la cocina colombiana
+                </p>
+                <div class="link">
+                    <a href="/html/reservar.html">Compra ahora</a>
+                </div>
+            </div>
+        </div>
+</section>
+</body>
+
+    <!--Pié de página -->
+<footer class="container__footer">
+    <div class="footer">
+            <div class="contacto">
+                <h4 class="siguenos">Contacto</h4>
+                    <p>Bryanbocanegra2004@gmail</p>
+                    <p>Teléfono: 3156426181</p>
+            </div>
+            <div class="logos">
+                <h4 class="siguenos">Síguenos</h4>
+                <a href="#"><i class="fa-brands fa-facebook" style="color: #FFD43B;"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp" style="color: #FFD43B;"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram" style="color: #FFD43B;"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin" style="color: #FFD43B;"></i></a>
+            </div>
+            <div class="otros">
+                <h4 class="siguenos" >Dirección:</h4>
+                <p>Calle prueba N° 15-42 Bogotá D.C</p>
+            </div>
+    
+    </div>
+        <div class="derechos">
+            <p> © Todos los derechos reservados - 2025 - Términos y condiciones</p>
+        </div>
+</footer>
+</html>

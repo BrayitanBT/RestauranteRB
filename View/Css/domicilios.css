@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+.body{
+    background-image: url(/View/Assets/img/Restaurante/domicilio.jpg);
+}
+/*header*/
+.barraNav{
+    background-color: #000000;
+    color: #ffff;
+    display: flex;
+    height: 100px;
+    max-width:100% ;
+    box-shadow: 0 0 15px 1px black;
+}
+.enlaces{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-left:50%;
+    margin-top: 1%;
+}
+.enlacesC{
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    border: 2px solid ;
+    border-radius: 10px;
+    font-size: 21px;
+    font-weight:500;
+    background-color: #ffde59;
+    text-decoration: none;
+}
+.imagenNav{
+    height: 120%;
+}
+
+
+/*Pié de página */
+.container__footer{
+    width: 100%;
+    max-width: 300rem;
+    margin: auto;
+}
+.footer{
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    text-align: center;
+    font-size: 20px;
+    border-top:2px solid black ;
+    color:#ffde59 ;
+}
+.contacto{
+margin: 20px;
+}
+.siguenos{
+margin-bottom: 10px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size: 30px;
+color:#ffde59 ;
+}
+.logos{
+margin: 20px;
+font-size: 45px;
+
+}
+.logosImg{
+margin: 15px;
+
+}
+.otros{
+margin: 20px;
+
+}
+.derechos{
+margin-top: 0;
+font-size: 25px;
+text-align: center;
+background-color: #ffde59;
+color: #000000;
+padding: 10px;
+width: 100%;
+font-weight: 600;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/*Formulario*/
+.seccionFormulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.formulario{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    height: 40vh;    
+    width: 40vw;
+    min-width: 25em;
+    min-height: 40em;
+    background: #171d1c;
+    color: antiquewhite;
+    margin: 10%;
+}
+#botonRealizarPedido{
+    padding: 10px;
+    border-radius: 10px;
+    border: transparent;
+    width: 70%;
+    background-color: #f4c507;
+    color: white;
+    font-weight: 800;
+    font-size: 25px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#registrarse{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    gap: 20px;
+}
+#tituloRealizaDomicilio{
+    text-align: center;
+    border-bottom: solid black;
+    width: 80%;
+    padding: 20px;
+}
+#RealizaDomicilioLetra{
+    font-size: 50px;
+    font-weight: 300;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.input{
+    border-radius: 10px;
+    width: 100%;
+    font-size: 18px;
+}
+.letraFormulario{
+font-size: 20px;
+padding: 10px;
+}
+#seleccionaProducto{
+    display:flex;
+    width: 25vw;
+    min-width: 20rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.inputSeleccionarProducto{
+    width: 100%;
+    font-size: 20px;
+    border-radius: 10px;
+    font-size: 18px; 
+}
+#ingresarDireccion{
+    display:flex;
+    width: 25vw;
+    min-width: 20rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; 
+}
+.inputSeleccionarDireccion{
+    width: 100%;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-size: 18px;
+}

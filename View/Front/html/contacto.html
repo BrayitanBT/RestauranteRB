@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/View/Css/contacto.css">
+    <link rel="stylesheet" href="/View/Css/bootstrap/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/c439753abb.js" crossorigin="anonymous"></script>
+</head>
+<!--Encabezado -->
+<header >
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark"id="barranav" >
+        <div class="container-fluid">
+            <img src="/img/Logo/logo.png" alt="" style="height: 8vw;max-height: 200px; min-width: 150px; min-height:150px;">
+            <a class="navbar-brand" href="#" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  font-size: clamp(1rem, 5vw, 3rem); color: #FFD43B; ">FASTIE</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item" >
+                            <a class="nav-link" href="/index.html" style="font-size: clamp(0.8rem, 1.3vw, 3rem);">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="menu.html" style="font-size: clamp(0.8rem, 1.3vw, 3rem);">MENU</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sobre.html" style="font-size: clamp(0.8rem, 1.3vw, 3rem);">SOBRE NOSOTROS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html" style="font-size: clamp(0.8rem, 1.3vw, 3rem);">CONTACTOS </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="reservar.html" style="font-size: clamp(0.8rem, 1.3vw, 3rem);">RESERVAR</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="domicilios.html" style="font-size: clamp(0.8rem, 1.3vw, 3rem);">DOMICILIOS </a>
+                        </li>
+                        </ul>
+                </div>
+        </div>
+    </nav>
+</header>
+
+<body>
+    <!--formulario-->
+    <form class="formulario" action="#">
+        <h1 class="title-formu">Contactanos</h1>
+        <label for="nombre">Nombre y apellido</label>
+        <input type="text" placeholder="Richard Richi" id="nombre">
+        <label for="tel">Número de telefono</label>
+        <input type="tel"placeholder="3228518167"id="tel">
+        <label for="correo">Correo eléctronico</label>
+        <input type="email"placeholder="ejemplo@gmail.com"id="correo" required>
+        <label for="mensaje">Deja tu mensaje</label>
+        <input type="text" placeholder="hola ...." id="mensaje">
+          
+        <!-- The Modal -->
+        <section class="containt-modal" style="color: black;">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal" style="background: beige;color: black;border: none;border:1px solid black;margin:8px 45%;">
+          Enviar
+        </button >
+        <div class="modal" id="myModal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+        
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">Se registró tu respuesta</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+        
+              <!-- Modal body -->
+              <div class="modal-body">
+                Gracias por enviarnos tu opinión
+
+              </div>
+        
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal" style="background: #FFD43B;border: 2px solid black;">Cerrar</button>
+              </div>
+        
+            </div>
+          </div>
+        </div>
+      </section>
+
+            <h2 class="title-map"> Ubícanos en bosa</h2>
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15907.292682125835!2d-74.19749803955729!3d4.625616925585396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9e76bf0f8b47%3A0x6d428bde154742c0!2sColegio%20Distrital%20Orlando%20Higuita%20Rojas!5e0!3m2!1ses!2sco!4v1741748399679!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+    </form>
+
+
+    <!--Pié de página -->
+    <footer class="container__footer">
+        <div class="footer">
+                <div class="contacto">
+                    <h4 class="siguenos">Contacto</h4>
+                        <p>Bryanbocanegra2004@gmail</p>
+                        <p>Teléfono: 3156426181</p>
+                </div>
+                <div class="logos">
+                    <h4 class="siguenos">Síguenos</h4>
+                    <a href="#"><i class="fa-brands fa-facebook" style="color: #FFD43B;"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp" style="color: #FFD43B;"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram" style="color: #FFD43B;"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin" style="color: #FFD43B;"></i></a>
+                </div>
+                <div class="otros">
+                    <h4 class="siguenos" >Dirección:</h4>
+                    <p>Calle prueba N° 15-42 Bogotá D.C</p>
+                </div>
+        
+        </div>
+            <div class="derechos">
+                <p> © Todos los derechos reservados - 2025 - Términos y condiciones</p>
+            </div>
+    </footer>
+</body>

@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+.producto { border: 1px solid #ccc; padding: 20px; display: inline-block; margin: 20px; }
+        .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); }
+        .modal-contenido { background: white; padding: 20px; margin: 10% auto; width: 400px; border-radius: 5px; }
+        .cerrar { cursor: pointer; color: red; float: right; font-size: 20px; }
+#lista-compras { text-align: left; margin-top: 10px; }
+#ver-carrito { position: relative; }
+#contador-carrito { background: red; color: white; border-radius: 50%; padding: 5px 10px; font-size: 14px; position: absolute; top: -10px; right: -10px; display: none; }
+.body{
+    background-image: url(/View/Assets/img/Restaurante/fondomenu.jpg);
+}
+
+/*header*/
+.barraNav{
+    background-color: #000000;
+    color: #ffff;
+    display: flex;
+    height: 100px;
+    max-width:100% ;
+    box-shadow: 0 0 15px 1px black;
+}
+.enlaces{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-left:50%;
+    margin-top: 1%;
+}
+.enlacesC{
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    border: 2px solid ;
+    border-radius: 10px;
+    font-size: 21px;
+    font-weight:500;
+    background-color: #ffde59;
+    text-decoration: none;
+}
+.imagenNav{
+    height: 120%;
+}
+
+
+/*Pié de página */
+.container__footer{
+    width: 100%;
+    max-width: 300rem;
+    margin: auto;
+}
+.footer{
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    text-align: center;
+    font-size: 20px;
+    border-top:2px solid black ;
+    color:#ffde59 ;
+}
+.contacto{
+margin: 20px;
+}
+.siguenos{
+margin-bottom: 10px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size: 30px;
+color:#ffde59 ;
+}
+.logos{
+margin: 20px;
+font-size: 45px;
+
+}
+.logosImg{
+margin: 15px;
+
+}
+.otros{
+margin: 20px;
+
+}
+.derechos{
+margin-top: 0;
+font-size: 25px;
+text-align: center;
+background-color: #ffde59;
+color: #000000;
+padding: 10px;
+width: 100%;
+font-weight: 600;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/*modal*/
+.title__car,.vaciar__car{
+font-weight: 900;
+text-align: center;
+padding: 10px;
+text-shadow: 1px 1px 5px #fbd87f;
+}
+.vaciar__car{
+    border-radius: 10px;
+    background-color: #fbd87f;
+}
+.total__car{
+    font-weight: 600;
+}
+
+
+
+/*Seccion de las tarjetas del menú*/
+.seccionTarjetas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    gap: 1%;
+
+}
+
+.tarjetas--container{
+   display: flex;
+   flex-wrap: wrap;
+  
+}
+.card{
+    position: relative;
+    width: 400px;
+    height: 550px;
+    margin: 20px;
+}
+.button__car{
+    background-color: beige;
+    border-radius: 8px;
+    padding: 2px;
+}
+.card .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 1s;
+ 
+}
+.card .front{
+    transform: perspective(600px) rotateY(0deg);
+
+}
+
+.card .front img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+.card .front h3{
+    position: absolute;
+
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: black;
+    font-weight: bold;
+    background:linear-gradient(#fbd87f,white);
+    text-align: center;
+    font-size: 30px;
+    font-weight: 100;
+}
+.card .back{
+    transform: perspective(600px) rotateY(180deg);
+    background:#171d1c;
+    padding: 15px;
+    color: rgb(221, 221, 219);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px black;
+}
+.card .back .link{
+    border-top: solid 1px rgb(0, 0, 0);
+    height: 50px;
+    line-height: 60px;
+}
+.card .back .link a{
+    color:black;
+    padding: 10px;
+    background:linear-gradient(#fbd87f, white);
+    border-radius: 20px;
+    font-size: 25px;
+}
+.card .back h3{
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+    padding: 5px;
+    color: black;
+    background:linear-gradient(#fbd87f, white);
+    border-radius: 0 20px 0 20px;
+}
+.card .back p{
+    font-size: 25px;
+    letter-spacing: 1px;
+    margin:0 2px;
+}
+.card:hover .front{
+    transform: perspective(600px) rotateY(180deg);
+}
+.card:hover .back{
+    transform: perspective(600px) rotateY(360deg);
+}
+
+/*Sección de las bebidas*/
+.title-bebidas, .menuT{
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 800;
+    font-family:sans-serif
+}
+
+#ver-carrito{
+    position: absolute;
+    position: fixed;
+    left: 90%;
+    top:90%;
+    background: #242424;
+    color: #ffde59;
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 35px;
+    font-weight: 900;
+    width: 90px;
+}
+
