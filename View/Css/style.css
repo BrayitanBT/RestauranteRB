@@ -92,7 +92,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .body{
-background-image: url(/View/Assets/img/Restaurante/menufondo.jpg);
+background-image: url('../Assets/img/Restaurante/menufondo.jpg');
 }
 
 /*index*/

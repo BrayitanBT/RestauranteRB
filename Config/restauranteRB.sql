@@ -67,3 +67,4 @@ CREATE DATABASE RestauranteRB
         /*------------------ PAGOS - ORDEN -------------------*/
     ALTER TABLE Orden ADD CONSTRAINT FK_ID2 FOREIGN KEY (Id_pagos) REFERENCES Pagos (Id_pagos);
 
+SELECT User, Host FROM mysql.user;
