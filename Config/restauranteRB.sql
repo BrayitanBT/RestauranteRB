@@ -1,5 +1,3 @@
-CREATE DATABASE RestauranteRB
-    DEFAULT CHARACTER SET = 'utf8mb4';
 
     use RestauranteRB;
 

@@ -6,7 +6,7 @@
     list-style-type: none;
 }
 .body{
-    background-image: url(/View/Assets/img/Restaurante/negrodibujo.jpg);
+    background-image: url('../Assets/img/Restaurante/negrodibujo.jpg');
     color: #ffffff;
 }
 /*header*/

@@ -6,7 +6,7 @@
     list-style-type: none;
 }
 .body{
-    background-image: url(/View/Assets/img/Restaurante/domicilio.jpg);
+    background-image: url('../Assets/img/Restaurante/negrodibujo.jpg');
 }
 /*header*/
 .barraNav{
@@ -94,6 +94,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 .formulario{
     display:flex;
@@ -108,6 +109,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background: #171d1c;
     color: antiquewhite;
     margin: 10%;
+    
 }
 #botonRealizarPedido{
     padding: 10px;

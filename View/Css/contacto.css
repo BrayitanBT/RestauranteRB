@@ -6,7 +6,8 @@
     list-style-type: none;
 }
 body{
-    background-image: url(/View/Assets/img/Restaurante/negrodibujo.jpg);
+    background-image: url('../Assets/img/Restaurante/negrodibujo.jpg');
+
 }
 /*header*/
 .barraNav{
@@ -98,10 +99,10 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     border: 2px solid black;
     padding: 40px;
     width: 40vw;
-    height: 40vw;
+    /* height: 45vh; */
     margin: 10em auto;
     min-width: 25em;
-    min-height: 40em;
+    /* min-height: 40em; */
     border-radius: 15px;
     box-shadow: 0 0 6px solid;
     box-shadow: 0 0 10px black;
