@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../Css/registro.css">
+</head>
+<body>
+    <div class="formu">
+        <form action="../../../controlador/registro.php" method="POST" class="formulario">
+            <h2>Registrarse</h2>
+                <label for="">Nombre</label>
+                    <input type="text"name="Nombre" required>
+                <label for="">Apellido</label>
+                    <input type="text" name="Apellido" required >
+                <label for="">Documento</label>
+                    <input type="number" name="Documento">         
+                <label for="">Telefono</label>
+                    <input type="number" name="Telefono">        
+                <label for="">Email</label>
+                    <input type="email" name="Correo_electronico" required>
+                <label for="">Contraseña</label>
+                    <input type="password" name="Contrasena" required>
+            
+            <button>Enviar</button>
+        </form>
+     </div>   
+</body>
+</html>

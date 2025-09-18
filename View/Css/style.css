@@ -120,6 +120,7 @@ background-image: url('../Assets/img/Restaurante/menufondo.jpg');
     flex-wrap: wrap;
     justify-content: center;
     gap: 8%;
+
 }
 .card{
     position: relative;

@@ -31,7 +31,8 @@
         Apellido VARCHAR(30),
         Documento INT(10),
         Telefono INT(10),
-        Corro_electronico VARCHAR(50),
+        Correo_electronico VARCHAR(50),
+        Contrasena VARCHAR(30),
         Tipo_usuario VARCHAR(15)
     );
 

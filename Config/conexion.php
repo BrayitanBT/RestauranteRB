@@ -5,8 +5,8 @@
         //definir los atributos
         private static $host = "localhost";
         private static $dbname = "restauranteRB";
-        private static $username = "richard123";
-        private static $password = "12345";
+        private static $username = "root";
+        private static $password = "";
         private static $charset = "utf8mb4";
         private static $pdo = null;
         
