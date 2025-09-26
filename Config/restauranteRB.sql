@@ -32,7 +32,7 @@
         Documento INT(10),
         Telefono INT(10),
         Correo_electronico VARCHAR(50),
-        Contrasena VARCHAR(30),
+        Contrasena VARCHAR(255),
         Tipo_usuario VARCHAR(15)
     );
 
