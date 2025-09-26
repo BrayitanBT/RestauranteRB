@@ -1,35 +1,43 @@
 <?php
-require_once "../Config/conexion.php";
+require_once "../config/conexion.php";
 require_once "../modelo/usuario.php";
-session_start();
 
-class Usuario_controlador {
-    private $modelo_usuario;
+class UsuarioController {
+
+    private $modelUser;
 
     public function __construct() {
-        $db = Database::connection();
-        $this->modelo_usuario = new Usuario($db);
-    }
+    $this->modelUser = new Usuario(); 
+}
 
-    public function validar_usuario() {
+    public function validarUser() {
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-            $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
-            $pass  = filter_input(INPUT_POST, 'contrasena', FILTER_DEFAULT);
-
-            $usuario = $this->modelo_usuario->login($email, $pass);
+            $usuario = $this->modelUser->login($_POST['email'], $_POST['contrasena']);
 
             if ($usuario) {
+                session_start();
                 $_SESSION['usuario'] = $usuario;
                 header("Location: ../View/Front/html/perfil.php");
                 exit();
             } else {
-                $_SESSION['error'] = "Credenciales no válidas";
-                header("Location: ../View/Front/html/inicio_sesion.php");
+                header("Location:../View/Front/html/inicio_sesion.php");
                 exit();
             }
+        } else {
+            header("Location:../View/Front/html/inicio_sesion.php");
+            exit();
         }
+    }
+
+    public function cerrarSesion() {
+        session_start();
+        session_destroy();
+        header("Location:../View/Front/html/inicio_sesion.php");
+        exit();
     }
 }
 
-$controlador = new Usuario_controlador();
-$controlador->validar_usuario();
+// Ejecutar el controlador
+$controller = new UsuarioController();
+$controller->validarUser();
+?>

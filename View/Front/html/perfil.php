@@ -1,19 +1,11 @@
-<?php
-session_start();
-if (!isset($_SESSION['usuario'])) {
-    header("Location: inicio_sesion.php");
-    exit();
-}
-?>
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Perfil</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
-    <h1>Bienvenido, <?php echo $_SESSION['usuario']['Nombre']; ?>!</h1>
-    <p>Tu correo es: <?php echo $_SESSION['usuario']['Correo_electronico']; ?></p>
-    <a href="cerrar_sesion.php">Cerrar sesión</a>
+    <h2>hola brandon</h2>
 </body>
 </html>

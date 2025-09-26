@@ -57,7 +57,7 @@
     
     <main class="container__formu">
         <article class="seccionSede">
-            <form action="/RestauranteRB/controlador/login.php" method="POST" class="sede">
+            <form action="../../../controlador/login.php" method="POST" class="sede">
                 <div id="tituloReservaAhora">
                     <h2 id="ReservaAhoraLetra">INICIA SESIÓN</h2>
                 </div>
@@ -68,7 +68,7 @@
                 
                 <div id="seleccionaSede">
                     <label  class="letraFormulario" for="">Ingresa tu contraseña</label>
-                    <input type="text" name="contrasena" class="inputSeleccionarSede">
+                    <input type="password" name="contrasena" class="inputSeleccionarSede">
                 </div>
 
                 <input type="submit" class="btn btn-primary"  style="background: #FFde59;color: black;border: none;margin:8px 45%;width: 70%;padding: 10px;font-size: 25px;">

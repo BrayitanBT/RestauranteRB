@@ -2,11 +2,11 @@
 require_once "../config/conexion.php";
 
 class Usuario {
-    private $db;
+    public $db;
 
     // Constructor recibe la conexión
-    public function __construct($db) {
-        $this->db = $db;
+    public function __construct() {
+        $this->db = Database::connection();
     }
 
     // Obtener usuario por correo
@@ -20,13 +20,11 @@ class Usuario {
     // Validar login
     public function login($email, $pass) {
         $usuario = $this->obtener_usuario($email);
-
-        if ($usuario) {
-            if (password_verify($pass, $usuario['Contrasena'])) {
-                return $usuario;
-            }
+        if ($usuario && password_verify($pass, $usuario['Contrasena'])) {
+            return $usuario;
+        } else {
+            return false;
         }
-        return false;
     }
 
     // Registrar usuario
@@ -41,7 +39,7 @@ class Usuario {
             ':documento' => $documento,
             ':telefono' => $telefono,
             ':correo' => $correo,
-            ':contrasena' => $contrasena,
+            ':contrasena' =>($contrasena),
             ':tipo_usuario' => $tipo
         ]);
     }
