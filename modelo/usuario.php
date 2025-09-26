@@ -10,18 +10,21 @@ class Usuario {
     }
 
     // Obtener usuario por correo
-    public function obtenerUsuario($email) {
+    public function obtener_usuario($email) {
         $sql = "SELECT * FROM usuario WHERE Correo_electronico = :email LIMIT 1";
         $stmt = $this->db->prepare($sql);
         $stmt->execute([":email" => $email]);
         return $stmt->fetch(PDO::FETCH_ASSOC);
     }
 
-    // Login: devuelve usuario si existe
-    public function login($email) {
-        $usuario = $this->obtenerUsuario($email);
+    // Validar login
+    public function login($email, $pass) {
+        $usuario = $this->obtener_usuario($email);
+
         if ($usuario) {
-            return $usuario;
+            if (password_verify($pass, $usuario['Contrasena'])) {
+                return $usuario;
+            }
         }
         return false;
     }
@@ -43,15 +46,11 @@ class Usuario {
         ]);
     }
 
-    // Métodos extra (los puedes implementar luego)
-    public function listarUsuario() {
+    // Listar todos los usuarios
+    public function listar_usuario() {
         $sql = "SELECT * FROM usuario";
         $stmt = $this->db->query($sql);
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
-    }
-
-    public function crearUsuario() {
-        // aquí podrías implementar lógica adicional si lo necesitas
     }
 }
 ?>

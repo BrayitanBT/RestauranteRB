@@ -20,6 +20,7 @@
 <body class="body">
     <!--Encabezado -->
     <header >
+
         <nav class="navbar navbar-expand-sm bg-dark navbar-dark"id="barranav" >
             <div class="container-fluid">
                 <img src="../../Assets/img/Logo/logo.png" alt="" style="height: 8vw;max-height: 200px; min-width: 150px; min-height:150px;">
@@ -51,72 +52,35 @@
                     </div>
             </div>
         </nav>
+    
     </header>
     
-<main class="container__formu">
-    <article class="seccionSede">
-        <div class="sede">
-            <div id="tituloReservaAhora">
-                <h2 id="ReservaAhoraLetra">INICIA SESIÓN</h2>
-            </div>
-            <div id="seleccionaMesa">
-                <label  class="letraFormulario" for="">Selecciona la mesa</label>
-                <select name="" class="inputSeleccionarMesa">
-                    <option value="">Mesa especial</option>
-                    <option value="">Mesa casual</option>
-                    <option value="">Mesa ejecutiva</option>
-                </select>
-            </div>
-            
-            <div id="seleccionaSede">
-                <label  class="letraFormulario" for="">Selecciona la sede</label>
-                <select name="" class="inputSeleccionarSede">
-                    <option value="">Sede Bosa</option>
-                    <option value="">Sede Kennedy</option>
-                    <option value="">Sede Chapinero</option>
-                    <option value="">Sede Soacha</option>
-                </select>
-            </div>
-            <div id="seleccionarFecha">
-                <label class="letraFormulario" for="">Selecciona la fecha</label>
-                <input class="inputSeleccionarFecha" type="datetime-local" value="" required>
-            </div>
-             <!-- The Modal -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal" style="background: #FFde59;color: black;border: none;margin:8px 45%;width: 70%;padding: 10px;font-size: 25px;">
-              Reservar
-            </button >
-            <div class="modal" id="myModal">
-              <div class="modal-dialog">
-                <div class="modal-content">
-            
-                  <!-- Modal Header -->
-                  <div class="modal-header" style="color: black;">
-                    <h4 class="modal-title">Se registró tu reserva</h4>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                  </div>
-            
-                  <!-- Modal body -->
-                  <div class="modal-body" style="color: black;">
-                    Gracias por tu compra
-    
-                  </div>
-            
-                  <!-- Modal footer -->
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal" style="background: #FFD43B;border: 2px solid black;color: black;">Cerrar</button>
-                  </div>
-            
+    <main class="container__formu">
+        <article class="seccionSede">
+            <form action="/RestauranteRB/controlador/login.php" method="POST" class="sede">
+                <div id="tituloReservaAhora">
+                    <h2 id="ReservaAhoraLetra">INICIA SESIÓN</h2>
                 </div>
-              </div>
-            </div>
- 
-            <div id="registrarse">
-                <label for="">¿No tienes cuenta aún?</label>
-                <a href="">Regístrarse</a>
-            </div>
-        </div>
-    </article>
-</main>
+                <div id="seleccionaMesa">
+                    <label  class="letraFormulario" for="">Ingresa tu Correo</label>
+                    <input type="email" name="email" class="inputSeleccionarMesa">
+                </div>
+                
+                <div id="seleccionaSede">
+                    <label  class="letraFormulario" for="">Ingresa tu contraseña</label>
+                    <input type="text" name="contrasena" class="inputSeleccionarSede">
+                </div>
+
+                <input type="submit" class="btn btn-primary"  style="background: #FFde59;color: black;border: none;margin:8px 45%;width: 70%;padding: 10px;font-size: 25px;">
+
+
+                <div id="registrarse">
+                    <label for="">¿No tienes cuenta aún?</label>
+                    <a href="./registro.html">Regístrarse</a>
+                </div>
+            </form>
+        </article>
+    </main>
 
 <!--Pié de página -->
 <footer class="container__footer">

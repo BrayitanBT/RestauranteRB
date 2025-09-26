@@ -21,7 +21,7 @@
                     }
                     catch(PDOException $e){
                         die ("Error de conexion: " . $e->getMessage());
-                       
+
                     }
                 }
                 return self::$pdo;
