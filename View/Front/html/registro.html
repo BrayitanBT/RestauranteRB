@@ -48,7 +48,7 @@
                                 <a class="nav-link" href="./domicilios.html" style="font-size: clamp(0.8rem, 1.3vw, 3rem);">DOMICILIOS </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./inicio_sesion.html" style="font-size: clamp(0.8rem, 1.4vw, 3rem);">Iniciar Sesión </a>
+                                <a class="nav-link" href="./inicio_sesion.php" style="font-size: clamp(0.8rem, 1.4vw, 3rem);">Iniciar Sesión </a>
                             </li>
                             </ul>
                     </div>
@@ -57,7 +57,7 @@
     </header>
     <!--Formulario-->
     <div class="container-form">
-        <form  action="../../../controlador/registro.php" method="POST" class="form">
+        <form  action="../../../controlador/UsuarioController.php" method="POST" class="form">
 
             <h2 class="title">Registrarse</h2>
 
@@ -72,6 +72,8 @@
                 <input type="email" name="Correo_electronico" placeholder="Email" required>
                 
                 <input type="password" name="Contrasena" placeholder="Contraseña" required>
+
+                <input type="hidden" name="accion" value="registro">
             
                 <input type="submit">
 

@@ -57,18 +57,19 @@
     
     <main class="container__formu">
         <article class="seccionSede">
-            <form action="../../../controlador/login.php" method="POST" class="sede">
+            <form action="../../../controlador/UsuarioController.php" method="POST" class="sede">
                 <div id="tituloReservaAhora">
                     <h2 id="ReservaAhoraLetra">INICIA SESIÓN</h2>
                 </div>
                 <div id="seleccionaMesa">
                     <label  class="letraFormulario" for="">Ingresa tu Correo</label>
-                    <input type="email" name="email" class="inputSeleccionarMesa">
+                    <input type="email" name="email" class="inputSeleccionarMesa" required>
+                    <input type="hidden" name="accion" value="login">
                 </div>
                 
                 <div id="seleccionaSede">
                     <label  class="letraFormulario" for="">Ingresa tu contraseña</label>
-                    <input type="password" name="contrasena" class="inputSeleccionarSede">
+                    <input type="password" name="contrasena" class="inputSeleccionarSede" required>
                 </div>
 
                 <input type="submit" class="btn btn-primary"  style="background: #FFde59;color: black;border: none;margin:8px 45%;width: 70%;padding: 10px;font-size: 25px;">
