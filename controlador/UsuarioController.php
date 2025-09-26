@@ -20,8 +20,8 @@ class UsuarioController {
                 header("Location:../View/Front/html/perfil.php");
                 exit();
             } else {
-                header("Location:../View/Front/html/inicio_sesion.php");
-                exit();
+                echo "mal gay";
+
             }
         } else {
             header("Location:../View/Front/html/inicio_sesion.php");
